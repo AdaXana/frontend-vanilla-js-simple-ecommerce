@@ -1,11 +1,97 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <title>Ducktor Store</title>
+    <link rel="icon" type="image" href="./img/LogoFoot.png">
 </head>
+
 <body>
-    <script src="js/main.js"></script>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/LogoDucktorNav.png" alt="Logo de Ducktor Store">
+            </a>
+        </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="pages/gallery.html"><i class="fa-solid fa-store"></i> Catálogo</a></li>
+                    <li><a href="pages/cart.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+                </ul>
+            </nav>
+            <form action="" class="searchBx" role="search">
+                <button type="submit" aria-label="Buscar productos">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input type="text" placeholder="Encuentra tu Ducktor" aria-label="Campo de búsqueda" required>
+            </form>
+            <button class="toggleMenu" onclick="toggleMenu()" aria-label="Abrir menú de navegación">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="col-left">
+                <div class="intro-box">
+                    <h1>Consulta a tu Ducktor</h1>
+                    <p class="intro">
+                        Este pequeño patito de hule no solo decora tu escritorio, tu Ducktor de confianza te ayudará a
+                        pensar en voz alta, aclarar ideas y encontrar la solución por ti mismo, sin juzgarte.<br><br>
+                        Porque a veces, lo único que necesitas para resolver un problema… es explicárselo a tu Ducktor.
+                    </p>
+                    <a href="pages/gallery.html" class="btn">Ver catálogo</a>
+                </div>
+                <div class="partner-box">
+                    <ul class="campaign-list">
+                        <li>
+                            <img src="assets/images/LogoCodeWell.png" alt="Logo de CodeWell" title="CodeWell">
+                        </li>
+                        <li>
+                            <img src="assets/images/CodeWellAnimation.png" alt="Ducktor Hope CodeWell"
+                                title="Ducktor Hope CodeWell">
+                        </li>
+                        <li>
+                            <img src="assets/images/Campaign.png" alt="Sello de colaboración oficial"
+                                title="Sello Campaña">
+                        </li>
+                    </ul>
+                    <a href="./pages/detail.html?id=Fundation" class="btn-codewell">Adquiere tu Ducktor Hope
+                    </a>
+                    <p class="support-text">
+                        Con la compra del Ducktor Hope apoyas a la fundación Code Well <br> que trabaja por la salud
+                        mental de las personas en tecnología.
+                    </p>
+                </div>
+            </div>
+            <div class="col-right">
+                <img src="./assets/images/DuckHero.png" alt="Big Duck" title="Big Duck">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+            <img src="./assets/images/LogoFoot.png" alt="Simple Logo Duckstore" title="Simple Logo Duckstore">
+            <p class="copy">Copyright &copy; 2025 All Rights Reserved</p>
+            <a class="contact" href="./pages/contact.html">Contacto</a>
+            <ul>
+                <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" ></i></a></li>
+                <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+    </footer>
+    
+    <script src="./js/main.js"></script>
+
 </body>
+
 </html>
