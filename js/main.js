@@ -1,0 +1,1 @@
+console.log("Welcome! Please tell your Ducktor.");
